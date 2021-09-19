@@ -12,13 +12,14 @@ public static void CalculateDailyWages()
 	Random rn = new Random();
 	int check= rn.nextInt(2);
 	int RatePerHour = 20;
+	int PartTimeHour = 4;
 	int FullDayHour = 8;
-	int TotalWages = 0;
+	int TotalWages= 0;
 	if(check == IsFullTime)
 	{
 		System.out.println("Employee Present.");
-		TotalWages = RatePerHour * FullDayHour;
-		System.out.println("Daily Wages  : "+ TotalWages);
+		TotalWages = RatePerHour * PartTimeHour;
+		System.out.println("Daily PartTime Wages  : "+ TotalWages);
 		
 	}
 	else
